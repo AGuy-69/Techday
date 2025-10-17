@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Download our stuff</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #e6f0ff;
+      color: #002b5c;
+    }
+
+    header {
+      display: flex;
+      align-items: center; /* centers image + text vertically */
+      justify-content: center; /* centers them horizontally */
+      gap: 10px; /* adds breathing room between image and text */
+
+      background: linear-gradient(to right, #0077ff, #0052cc);
+      color: white;
+      padding: 20px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    header span {
+      transform: translateY(-3px); /* gentle nudge up */
+      font-size: 1.3rem;
+    }
+
+    main {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 50, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      color: #0052cc;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .btn {
+      background-color: DodgerBlue;
+      border: none;
+      color: white;
+      padding: 10px 30px;
+      cursor: pointer;
+      font-size: 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: RoyalBlue;
+    }
+
+    .img {
+      position: relative;
+      margin-right: 20px;
+      top: 8px;
+      width: 50px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0077ff;
+      color: white;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header><span>Gallery and Downloader</span></header>
+
+  <main>
+    <div class="card">
+      <img src="/images/Squirell.png" alt="Project 1" />
+      <div class="card-content">
+        <h3>Squirell Fashion</h3>
+        <p style="padding-bottom: 20px;">A game to design your dream squirell</p>
+        <a href="/Files/Squirrel_Fashion.html" download="squirrel_fashion" class="btn" style="margin-bottom: 10px;">
+          <i class="fa fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/images/Earth.png" alt="Project 1" />
+      <div class="card-content">
+        <h3>Earth clicker</h3>
+        <p style="padding-bottom: 20px;">A game where you click the earth</p>
+        <a href="/Files/Earth_clicker" download="Earth_clicker" class="btn" style="margin-bottom: 10px;">
+          <i class="fa fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/images/Moon.png" alt="Project 1" />
+      <div class="card-content">
+        <h3>Moon jump</h3>
+        <p style="padding-bottom: 20px;">You jump over holes on the moon</p>
+        <a href="/Files/Moon_jump" download="Moon_Jump" class="btn" style="margin-bottom: 10px;">
+          <i class="fa fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/images/Asteroid.png" alt="Project 1" />
+      <div class="card-content">
+        <h3>Asteroid shooter</h3>
+        <p style="padding-bottom: 20px;">A game where you dodge and shoot asteroids</p>
+        <a href="/Files/Shooter.html" download="Asteroid_shooter" class="btn" style="margin-bottom: 10px;">
+          <i class="fa fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/images/countryballs.png" alt="Project 1" />
+      <div class="card-content">
+        <h3>Countryballs catcher</h3>
+        <p style="padding-bottom: 20px;">A game where catch countryballs</p>
+        <a href="/Files/Countryballs.html" download="Countryballs" class="btn" style="margin-bottom: 10px;">
+          <i class="fa fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 Project Gallery | Made by Nizamians</footer>
+</body>
+</html>
